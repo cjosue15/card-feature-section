@@ -1,0 +1,203 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #a3a5ae;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #4c4e61;
+}
+
+.content-header {
+    max-width: 100%;
+    padding: 0 1.5em;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.content-header h1 {
+    font-weight: 200;
+}
+
+.content-header span {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 1.5em;
+}
+
+.card-containers {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.card {
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px -2px rgba(163, 165, 174, 0.8);
+    margin-top: 2em;
+    position: relative;
+    overflow: hidden;
+    max-width: 320px;
+    background: #fff;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+}
+
+.card.red::before {
+    background: #ea5353;
+}
+
+.card.cyan::before {
+    background: #45d3d3;
+}
+
+.card.orange::before {
+    background: #fcaf4a;
+}
+
+.card.blue::before {
+    background: #549ef2;
+}
+
+.card-title {
+    margin-bottom: 0.5em;
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.card-icon {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.attribution {
+    width: 100%;
+    text-align: center;
+    padding: 3em 1.5em;
+    margin: 0;
+    font-size: 16px;
+    color: #a3a5ae;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #4c4e61;
+    font-weight: 700;
+}
+
+#main {
+    flex: 1;
+}
+
+@media only screen and (min-width: 550px) {
+    .content-header span {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-containers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .card {
+        margin-top: 3em;
+    }
+
+    .content-header {
+        width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        margin: 2em;
+    }
+
+    .card.cyan {
+        justify-self: end;
+    }
+
+    .card.red {
+        justify-self: start;
+    }
+
+    .card.orange {
+        justify-self: end;
+    }
+
+    .card.blue {
+        justify-self: start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card-containers {
+        display: block;
+        height: 500px;
+    }
+
+    .card.red {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 270px;
+    }
+
+    .card.orange {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 530px;
+    }
+
+    .card.cyan {
+        transform: translateX(-160%);
+        left: 50%;
+        top: 130px;
+    }
+
+    .card.blue {
+        bottom: 140px;
+        left: 50%;
+        transform: translateX(60%);
+    }
+}
