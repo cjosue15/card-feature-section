@@ -1,4 +1,4 @@
-# Article Component
+# Card Feature Section
 
 ## ✍🏻 Descripción
 
@@ -6,11 +6,11 @@ Realize este challenge de [Frontend Mentor](https://www.frontendmentor.io/) para
 
 ## 🚀 Comenzando
 
-Solo debes clonarlo abrir el index.html y listo 😊
+Solo debes clonarlo, abrir el index.html y listo 😊
 
 ## 🎨 Demo
 
-Puedes ver el demo aquí → [Article Component](https://cjosue15.github.io/article-component/)
+Puedes ver el demo aquí → [Card Feature Section](https://cjosue15.github.io/card-feature-section/)
 
 🖥 Version Escritorio
 
